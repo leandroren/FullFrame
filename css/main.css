@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap");
+body {
+  background-image: linear-gradient(25deg, #0f0e0e, #100f0f, rgba(16, 14, 14, 0.8784313725), #000000);
+  color: rgba(245, 247, 248, 0.915);
+}
+body h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+body h2 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+body h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+body h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+body a {
+  text-decoration: none;
+}
+body svg {
+  color: rgba(245, 247, 248, 0.915);
+  margin: 0 1rem;
+}
+body svg:hover {
+  color: #75B3FE;
+  margin: 0 1rem;
+}
+body .btn-enviar {
+  background-color: #75B3FE;
+  border-radius: 8px;
+  width: 100px;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+body .btn-enviar:hover {
+  transition: all 0.1s;
+  background-color: rgba(245, 247, 248, 0.915);
+  color: #75B3FE;
+  font-weight: 500;
+}
+
+nav {
+  background-color: rgb(28, 26, 26);
+}
+nav .navbar-brand img {
+  width: 50%;
+}
+nav .nav-link {
+  color: rgb(249, 249, 249) !important;
+  font-size: 20px;
+  margin-left: 1rem;
+}
+nav .nav-link:hover, nav .nav-link.dropdown-toggle.show:hover {
+  color: #75B3FE !important;
+}
+
+.nosotros {
+  padding: 100px 0;
+  background-color: rgba(245, 247, 248, 0.915);
+  color: #060606;
+}
+.nosotros .descripcion-nosotros {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+.nosotros .bg-black {
+  background-color: #060606;
+  color: rgba(245, 247, 248, 0.915);
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(249, 249, 249);
+}
+.galeria .item img {
+  width: 400px;
+  height: 400px;
+  border: 2px solid rgba(0, 0, 0, 0.67);
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.67));
+  margin: 1rem 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2px;
+}
+
+.proyectos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.proyectos .card {
+  width: 45%;
+  margin: 2rem;
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 0.461);
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.67));
+}
+.proyectos .card:hover {
+  opacity: 0.4;
+  filter: drop-shadow(2px 2px 2px #c2c2c2);
+}
+
+.videos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(249, 249, 249);
+}
+.videos .ratio {
+  width: 45%;
+  margin: 2rem;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.67));
+}
+.videos iframe {
+  border-radius: 4px;
+}
+
+.contacto {
+  padding: 100px 0;
+}
+.contacto .formulario {
+  width: 30%;
+  margin: 0 auto;
+}
+.contacto .formulario .form-control {
+  background-color: rgba(245, 247, 248, 0.915);
+}
+
+.pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  background-color: rgb(28, 26, 26);
+}
+.pie .copyright {
+  width: 30%;
+}
+.pie .copyright p {
+  margin-left: 30px;
+  font-weight: 400;
+}
+.pie .redes {
+  width: auto;
+}
+.pie .flecha {
+  width: 30%;
+}
+.pie .flecha svg {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+@media (width < 768px) {
+  body {
+    /***** HEADER *****/
+    /***** COMUNES *****/
+  }
+  body .navbar-toggler {
+    color: #75B3FE;
+    background-color: rgba(245, 247, 248, 0.915);
+    border: none;
+  }
+  body .navbar-brand {
+    width: 60%;
+  }
+  body .navbar-brand img {
+    width: 100%;
+  }
+  body nav .nav-link {
+    font-size: 16px;
+    margin-left: 0;
+  }
+  body h1 {
+    font-size: 2.5rem;
+  }
+  body h2 {
+    font-size: 2rem;
+  }
+  body h3 {
+    font-size: 1.3rem;
+  }
+  body h4 {
+    font-size: 1rem;
+  }
+  body svg {
+    color: rgba(245, 247, 248, 0.915);
+    margin: 0 1rem;
+  }
+  body svg:hover {
+    color: #75B3FE;
+    margin: 0 1rem;
+  }
+  body .btn-enviar {
+    width: 80px;
+    color: white;
+    font-size: 16px;
+    padding: 4px;
+    margin: 5px 0;
+    text-align: center;
+  }
+  body .ratio > * {
+    height: auto;
+  }
+  body .nosotros {
+    padding: 20px 0;
+  }
+  body .nosotros .descripcion-nosotros {
+    width: 90%;
+  }
+  body .nosotros .descripcion-nosotros .py-5 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  body .nosotros .descripcion-nosotros h2 {
+    font-size: 1.3rem;
+  }
+  body .proyectos {
+    padding: 20px 0;
+  }
+  body .proyectos .card {
+    width: 100%;
+    margin: 1rem;
+  }
+  body .proyectos .card iframe {
+    height: 100%;
+    border-radius: 4px;
+  }
+  body .contacto {
+    padding: 20px 0;
+  }
+  body .contacto .formulario {
+    width: 90%;
+  }
+  body .pie {
+    padding: 20px 0;
+    flex-direction: column-reverse;
+  }
+  body .pie .copyright {
+    width: 100%;
+  }
+  body .pie .copyright p {
+    font-size: 10px;
+    margin: 2rem 1rem;
+    text-align: center;
+  }
+  body .pie .flecha svg {
+    right: 10px;
+    bottom: 10px;
+  }
+  body svg {
+    margin: 0 0.5rem;
+  }
+  body svg:hover {
+    margin: 0 0.5rem;
+  }
+  body .videos .ratio {
+    width: 100%;
+    height: 100%;
+    margin: 1rem;
+  }
+  body .galeria .item img {
+    width: 280px;
+    height: 250px;
+  }
+}/*# sourceMappingURL=main.css.map */

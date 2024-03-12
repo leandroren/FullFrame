@@ -1,0 +1,21 @@
+.proyectos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+
+.card {
+        width: 45%;
+        margin: 2rem;
+        padding: 2px;
+        background-color: rgba(0, 0, 0, 0.461);
+        filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.67));
+
+    }
+
+.card:hover{
+    opacity: .4;
+    filter: drop-shadow(2px 2px 2px #c2c2c2);
+}
+}
